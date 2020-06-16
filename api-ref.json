@@ -17,14 +17,22 @@
     "application/json"
   ],
   "paths": {
-    "/devices/{serial}/camera/analytics/live": {
+    "/yourFavoriteDALastName": {
       "get": {
         "description": "Returns live state from camera of analytics zones",
         "operationId": "getDeviceCameraAnalyticsLive",
         "parameters": [
           {
-            "name": "serial",
-            "in": "path",
+            "name": "favoriteDA1",
+            "description": "Valid values are 'Matt' or 'Kareem'",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "favoriteDA2",
+            "description": "Valid values are 'Matt' or 'Kareem'",
+            "in": "query",
             "type": "string",
             "required": true
           },
@@ -39,7 +47,7 @@
           {
             "name": "Authorization",
             "description": "String composed of “Basic”, followed by a space, followed by the Base64 encoding of “username:password”, NOT including the quotes. For example “Basic YWRtaW46TWFnbGV2MTIz”, where YWRtaW46TWFnbGV2MTIz is the Base 64 encoding.",
-            "default": "",
+            "default": "ZGV2bmV0OmlzYXdlc29tZQ==",
             "required": true,
             "type": "string",
             "in": "header"
@@ -54,20 +62,14 @@
               "x-is-dynamic": true
             },
             "examples": {
-              "application/json": {
-                "ts": "2018-08-15T18:32:38.123Z",
-                "zones": {
-                  "0": {
-                    "person": 0
-                  }
-                }
-              }
+              "application/json": {"developer_advocates":[{"first_name":"Kareem","last_name":"Iskander"}, 
+                {"first_name":"Matt", "last_name":"DeNapoli"}]}}
             }
           }
         },
-        "summary": "Returns live state from camera of analytics zones",
+        "summary": "Returns your favorite DAs Last Name",
         "tags": [
-          "MV Sense"
+          "Favorite DA"
         ]
       }
     }
