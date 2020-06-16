@@ -63,12 +63,16 @@
             },
             "examples": {
               "application/json": {
-                "ts": "2018-08-15T18:32:38.123Z",
-                "zones": {
-                  "0": {
-                    "person": 0
+                "developer_advocates": [
+                  {
+                    "first_name":"Kareem",
+                    "last_name":"Iskander"
+                  },
+                  {
+                    "first_name":"Matt", 
+                    "last_name":"DeNapoli"
                   }
-                }
+                ]
               }
             }
           }
