@@ -76,8 +76,6 @@
               "x-is-dynamic": true
             },
             "examples": {
-              "application/json": {"developer_advocates":[{"first_name":"Kareem","last_name":"Iskander"}, 
-                {"first_name":"Matt", "last_name":"DeNapoli"}]}
             }
           }
         },
