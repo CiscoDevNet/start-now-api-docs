@@ -20,7 +20,7 @@
     "/yourFavoriteDALastName": {
       "get": {
         "description": "Returns your favorite DA Last Name",
-        "operationId": "getyourFavoriteDALastName",
+        "operationId": "getYourFavoriteDALastName",
         "parameters": [
 {
             "type": "string",
@@ -65,9 +65,9 @@
             }
           }
         },
-        "summary": "Returns live state from camera of analytics zones",
+        "summary": "Returns your favorite DA Last Name",
         "tags": [
-          "MV Sense"
+          "Favorite DA"
         ]
       }
     }
