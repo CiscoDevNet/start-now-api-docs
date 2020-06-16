@@ -1,12 +1,12 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "0.11.0",
-    "title": "Meraki Dashboard API",
-    "description": "The Cisco Meraki Dashboard API is a modern REST API based on the OpenAPI specification.\n\n> Date: 06 May, 2020\n>\n> [What's New](https://meraki.io/whats-new/)\n\n---\n\n[API Documentation](https://meraki.io/api)\n\n[Community Support](https://meraki.io/community)\n\n[Meraki Homepage](https://www.meraki.com)\n",
+    "version": "1.0",
+    "title": "Start Now Challenge API",
+    "description": "The Start Now Challenge API will give you your favorite Developer Advocates' last name",
     "x-codegen-settings": {
-      "appendContentHeaders": true,
-      "brandLabel": "meraki",
+      "appendContentHeaders": false,
+      "brandLabel": "startnowchallenge",
       "collectParameters": true,
       "doNotSplitWords": [
         "ACLs",
@@ -14,17 +14,17 @@
         "SSIDs",
         "VLANs"
       ],
-      "generateAdvancedDocs": true,
-      "generateAsyncCode": true,
-      "projectName": "meraki",
+      "generateAdvancedDocs": false,
+      "generateAsyncCode": false,
+      "projectName": "startnowchallenge",
       "sortResources": true,
-      "useEnumPostfix": true,
+      "useEnumPostfix": false,
       "useMethodPrefix": false,
-      "useModelPostfix": true,
+      "useModelPostfix": false,
       "validateRequiredParameters": true
     }
   },
-  "host": "api.meraki.com",
+  "host": "startnowchallenge.cisco.com",
   "basePath": "/api/v0",
   "schemes": [
     "https"
