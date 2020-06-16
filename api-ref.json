@@ -1,0 +1,91 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.11.0",
+    "title": "Meraki Dashboard API",
+    "description": "The Cisco Meraki Dashboard API is a modern REST API based on the OpenAPI specification.\n\n> Date: 06 May, 2020\n>\n> [What's New](https://meraki.io/whats-new/)\n\n---\n\n[API Documentation](https://meraki.io/api)\n\n[Community Support](https://meraki.io/community)\n\n[Meraki Homepage](https://www.meraki.com)\n",
+    "x-codegen-settings": {
+      "appendContentHeaders": true,
+      "brandLabel": "meraki",
+      "collectParameters": true,
+      "doNotSplitWords": [
+        "ACLs",
+        "NetFlow",
+        "SSIDs",
+        "VLANs"
+      ],
+      "generateAdvancedDocs": true,
+      "generateAsyncCode": true,
+      "projectName": "meraki",
+      "sortResources": true,
+      "useEnumPostfix": true,
+      "useMethodPrefix": false,
+      "useModelPostfix": true,
+      "validateRequiredParameters": true
+    }
+  },
+  "host": "api.meraki.com",
+  "basePath": "/api/v0",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "meraki_api_key": {
+      "type": "apiKey",
+      "name": "X-Cisco-Meraki-API-Key",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "meraki_api_key": [
+
+      ]
+    }
+  ],
+  "paths": {
+    "/devices/{serial}/camera/analytics/live": {
+      "get": {
+        "description": "Returns live state from camera of analytics zones",
+        "operationId": "getDeviceCameraAnalyticsLive",
+        "parameters": [
+          {
+            "name": "serial",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "x-is-dynamic": true
+            },
+            "examples": {
+              "application/json": {
+                "ts": "2018-08-15T18:32:38.123Z",
+                "zones": {
+                  "0": {
+                    "person": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "Returns live state from camera of analytics zones",
+        "tags": [
+          "MV Sense"
+        ]
+      }
+    }
+   }
+  }
