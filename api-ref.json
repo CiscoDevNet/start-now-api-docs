@@ -36,28 +36,34 @@
     "application/json"
   ],
   "securityDefinitions": {
-    "meraki_api_key": {
-      "type": "apiKey",
-      "name": "X-Cisco-Meraki-API-Key",
+    "basic": {
+      "type": "basic",
+      "name": "Authorization",
       "in": "header"
     }
   },
   "security": [
     {
-      "meraki_api_key": [
+      "basic": [
 
       ]
     }
   ],
   "paths": {
-    "/devices/{serial}/camera/analytics/live": {
+    "/yourFavoriteDALastName": {
       "get": {
-        "description": "Returns live state from camera of analytics zones",
-        "operationId": "getDeviceCameraAnalyticsLive",
+        "description": "Returns your favorite DAs Last Name",
+        "operationId": "getYourFavoriteDALastName",
         "parameters": [
           {
-            "name": "serial",
-            "in": "path",
+            "name": "favoriteDA1",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "favoriteDA2",
+            "in": "query",
             "type": "string",
             "required": true
           }
@@ -70,20 +76,14 @@
               "x-is-dynamic": true
             },
             "examples": {
-              "application/json": {
-                "ts": "2018-08-15T18:32:38.123Z",
-                "zones": {
-                  "0": {
-                    "person": 0
-                  }
-                }
-              }
+              "application/json": {"developer_advocates":[{"first_name":"Kareem","last_name":"Iskander"}, 
+                {"first_name":"Matt", "last_name":"DeNapoli"}]}
             }
           }
         },
-        "summary": "Returns live state from camera of analytics zones",
+        "summary": "Returns your favorite DAs Last Name",
         "tags": [
-          "MV Sense"
+          "Favorite DA"
         ]
       }
     }
