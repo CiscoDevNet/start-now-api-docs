@@ -19,14 +19,14 @@
   "paths": {
     "/yourFavoriteDALastName": {
       "get": {
-        "description": "Returns live state from camera of analytics zones",
+        "description": "Returns your favorite DA Last Name",
         "operationId": "getyourFavoriteDALastName",
         "parameters": [
-          {
-            "name": "serial",
-            "in": "path",
+{
             "type": "string",
-            "required": true
+            "name": "favoriteDA",
+            "in": "query",
+            "description": "First Name for your Favorite DA"
           },
           {
             "name": "Content-Type",
