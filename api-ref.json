@@ -39,7 +39,7 @@
           {
             "name": "Authorization",
             "description": "String composed of “Basic”, followed by a space, followed by the Base64 encoding of “username:password”, NOT including the quotes. For example “Basic YWRtaW46TWFnbGV2MTIz”, where YWRtaW46TWFnbGV2MTIz is the Base 64 encoding.",
-            "default": "",
+            "default": "Basic ZGV2bmV0OmlzYXdlc29tZQ==",
             "required": true,
             "type": "string",
             "in": "header"
