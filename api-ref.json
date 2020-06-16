@@ -22,11 +22,19 @@
         "description": "Returns your favorite DA Last Name",
         "operationId": "getYourFavoriteDALastName",
         "parameters": [
-{
+          {
             "type": "string",
-            "name": "favoriteDA",
+            "name": "favoriteDA1",
             "in": "query",
-            "description": "First Name for your Favorite DA"
+            "description": "First Name for your Favorite DA",
+            "required": true
+          },
+          {
+            "type": "string",
+            "name": "favoriteDA2",
+            "in": "query",
+            "description": "First Name for your Favorite DA",
+            "required": true
           },
           {
             "name": "Content-Type",
