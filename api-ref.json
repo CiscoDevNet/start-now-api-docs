@@ -1,12 +1,12 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "0.11.0",
-    "title": "Meraki Dashboard API",
-    "description": "The Cisco Meraki Dashboard API is a modern REST API based on the OpenAPI specification.\n\n> Date: 06 May, 2020\n>\n> [What's New](https://meraki.io/whats-new/)\n\n---\n\n[API Documentation](https://meraki.io/api)\n\n[Community Support](https://meraki.io/community)\n\n[Meraki Homepage](https://www.meraki.com)\n",
+    "version": "1.0",
+    "title": "Start Now Challenge API",
+    "description": "The Start Now Challenge API will provide your favorite Developer Advocate last name\n",
     "x-codegen-settings": {
-      "appendContentHeaders": true,
-      "brandLabel": "meraki",
+      "appendContentHeaders": false,
+      "brandLabel": "startnowchallenge",
       "collectParameters": true,
       "doNotSplitWords": [
         "ACLs",
@@ -14,17 +14,17 @@
         "SSIDs",
         "VLANs"
       ],
-      "generateAdvancedDocs": true,
-      "generateAsyncCode": true,
-      "projectName": "meraki",
-      "sortResources": true,
-      "useEnumPostfix": true,
+      "generateAdvancedDocs": false,
+      "generateAsyncCode": false,
+      "projectName": "startnowchallenge",
+      "sortResources": false,
+      "useEnumPostfix": false,
       "useMethodPrefix": false,
-      "useModelPostfix": true,
+      "useModelPostfix": false,
       "validateRequiredParameters": true
     }
   },
-  "host": "api.meraki.com",
+  "host": "startnowchallenge.cisco.com",
   "basePath": "/api/v0",
   "schemes": [
     "https"
@@ -36,29 +36,29 @@
     "application/json"
   ],
   "securityDefinitions": {
-    "meraki_api_key": {
-      "type": "apiKey",
-      "name": "X-Cisco-Meraki-API-Key",
+    "basic": {
+      "type": "basic",
+      "name": "Authorization",
       "in": "header"
     }
   },
   "security": [
     {
-      "meraki_api_key": [
+      "basic": [
 
       ]
     }
   ],
   "paths": {
-    "/devices/{serial}/camera/analytics/live": {
+    "/yourFavoriteDALastName": {
       "get": {
-        "description": "Returns live state from camera of analytics zones",
-        "operationId": "getDeviceCameraAnalyticsLive",
+        "description": "Returns the last names of your favorite DAs",
+        "operationId": "getYourFavoriteDALastName",
         "parameters": [
           {
-            "name": "serial",
+            "name": "favoriteDA1",
             "in": "path",
-            "type": "string",
+            "type": "query",
             "required": true
           }
         ],
