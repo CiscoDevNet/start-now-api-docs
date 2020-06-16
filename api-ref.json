@@ -3,7 +3,8 @@
   "info": {
     "version": "1.0",
     "title": "Start Now Challenge API",
-    "description": "The Start Now Challenge API sends your favorite Developer Advocate's Last Name\n",
+    "description": "The Start Now Challenge API sends your favorite Developer Advocate's Last Name\n"
+  }
   "host": "startnowchallenge.cisco.com",
   "basePath": "/api/v0",
   "schemes": [
@@ -67,4 +68,3 @@
       }
     }
    }
-  }
