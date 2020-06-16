@@ -17,15 +17,15 @@
     "application/json"
   ],
   "securityDefinitions": {
-    "meraki_api_key": {
-      "type": "apiKey",
-      "name": "X-Cisco-Meraki-API-Key",
+    "basic": {
+      "type": "basic",
+      "name": "Authorization",
       "in": "header"
     }
   },
   "security": [
     {
-      "meraki_api_key": [
+      "basic": [
 
       ]
     }
