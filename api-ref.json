@@ -17,10 +17,10 @@
     "application/json"
   ],
   "paths": {
-    "/devices/{serial}/camera/analytics/live": {
+    "/yourFavoriteDALastName": {
       "get": {
         "description": "Returns live state from camera of analytics zones",
-        "operationId": "getDeviceCameraAnalyticsLive",
+        "operationId": "getyourFavoriteDALastName",
         "parameters": [
           {
             "name": "serial",
