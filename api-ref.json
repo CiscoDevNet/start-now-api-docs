@@ -16,20 +16,6 @@
   "produces": [
     "application/json"
   ],
-  "securityDefinitions": {
-    "basic": {
-      "type": "basic",
-      "name": "Authorization",
-      "in": "header"
-    }
-  },
-  "security": [
-    {
-      "basic": [
-
-      ]
-    }
-  ],
   "paths": {
     "/devices/{serial}/camera/analytics/live": {
       "get": {
@@ -41,7 +27,24 @@
             "in": "path",
             "type": "string",
             "required": true
+          },
+          {
+            "name": "Content-Type",
+            "description": "Request body content type",
+            "default": "application/json",
+            "required": true,
+            "type": "string",
+            "in": "header"
+          },
+          {
+            "name": "Authorization",
+            "description": "String composed of “Basic”, followed by a space, followed by the Base64 encoding of “username:password”, NOT including the quotes. For example “Basic YWRtaW46TWFnbGV2MTIz”, where YWRtaW46TWFnbGV2MTIz is the Base 64 encoding.",
+            "default": "",
+            "required": true,
+            "type": "string",
+            "in": "header"
           }
+        
         ],
         "responses": {
           "200": {
