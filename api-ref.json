@@ -5,7 +5,7 @@
     "title": "Start Now Challenge API",
     "description": "The Start Now Challenge API allows is a lookup for your favorite DA's last name.\n"
   },
-  "host": "startnowchallenge.cisco.comcom",
+  "host": "startnowchallenge.cisco.com",
   "basePath": "/api/v0",
   "schemes": [
     "https"
@@ -19,8 +19,8 @@
   "paths": {
     "/yourFavoriteDALastName": {
       "get": {
-        "description": "Returns live state from camera of analytics zones",
-        "operationId": "getDeviceCameraAnalyticsLive",
+        "description": "Returns your favorite DAs Last Name",
+        "operationId": "getYourFavoriteDALastName",
         "parameters": [
           {
             "name": "serial",
@@ -65,9 +65,9 @@
             }
           }
         },
-        "summary": "Returns live state from camera of analytics zones",
+        "summary": "Returns your favorite DAs Last Name",
         "tags": [
-          "MV Sense"
+          "Favorite DA"
         ]
       }
     }
